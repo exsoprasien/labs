@@ -16,10 +16,20 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserDao userDao;
 
+	//for Mysql
+//	@Override
+//	public User getUser(int id) {
+//		for (User user: getAllUsers()) {
+//			if(id == user.getId())
+//				return user;
+//		}
+//		return null;
+//	}
+	
 	@Override
-	public User getUser(int id) {
+	public User getUser(String id) {
 		for (User user: getAllUsers()) {
-			if(id == user.getId())
+			if(id.equals(user.getId()))
 				return user;
 		}
 		return null;
@@ -27,11 +37,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public List<User>  getAllUsers() {
-		List<User> userList = new ArrayList<User>();
-//		userList.add(new User(1, "younes"));
-//		userList.add(new User(2, "othmane"));
-//		userList.add(new User(3, "yassine"));
-		return userList;
+		return this.userDao.findAll();
 	}
 
 	@Override

@@ -20,33 +20,22 @@ public class UserRest {
 
 	@Autowired
 	private UserService userService;
-	
 
 	@RequestMapping("/users/{id}")
-	public User getUser(@PathVariable("id") int id) {
+	public User getUser(@PathVariable("id") String id) {
 		return this.userService.getUser(id);
 	}
-	
+
 	@PostMapping("/users/add")
-	public ResponseEntity  addUser(@RequestBody User user) {
+	public ResponseEntity addUser(@RequestBody User user) {
 		this.userService.addUser(user);
 		return new ResponseEntity(user, HttpStatus.OK);
-		
+
 	}
-	
+
 	@RequestMapping("/users")
 	public List<User> getUsers() {
-		//return this.userService.getAllUsers();
-		List<User> list= new ArrayList<User>();
-		User user = new User();
-		user.setFirstname("toto");
-		
-		User user2 = new User();
-		user2.setFirstname("toto2");
-		
-		list.add(user);
-		list.add(user2);
-		return list;
+		return this.userService.getAllUsers();
 	}
 
 }

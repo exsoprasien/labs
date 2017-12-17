@@ -6,7 +6,9 @@ import com.labs.model.User;
 
 public interface UserService {
 
-	public User getUser(int id);
+	//For mysql
+	//public User getUser(int id);
+	public User getUser(String id);
 
 	public void addUser(User user);
 
