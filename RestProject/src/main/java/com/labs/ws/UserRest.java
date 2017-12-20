@@ -1,6 +1,5 @@
 package com.labs.ws;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.labs.validator.UserValidation;

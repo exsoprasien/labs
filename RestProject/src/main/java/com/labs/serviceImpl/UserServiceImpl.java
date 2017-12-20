@@ -2,10 +2,10 @@ package com.labs.serviceImpl;
 
 import java.util.List;
 
+import com.labs.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.labs.dao.UserDao;
 import com.labs.model.User;
 import com.labs.service.UserService;
 
@@ -13,7 +13,7 @@ import com.labs.service.UserService;
 public class UserServiceImpl implements UserService {
 	
 	@Autowired
-	private UserDao userDao;
+	private UserRepository userRepository;
 
 	//for Mysql
 //	@Override
@@ -35,19 +35,19 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public User getUserByFirstname(String name) {
-		return userDao.findByFirstname(name).orElse(null);
+	public User getUserByFirstname(String firstname) {
+		return userRepository.findByFirstname(firstname).orElse(null);
 	}
 
 
 	@Override
 	public List<User>  getAllUsers() {
-		return this.userDao.findAll();
+		return this.userRepository.findAll();
 	}
 
 	@Override
 	public void addUser(User user) {
-		this.userDao.save(user);
+		this.userRepository.save(user);
 	}
 	
 	
