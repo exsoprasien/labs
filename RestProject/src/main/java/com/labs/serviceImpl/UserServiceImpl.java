@@ -33,7 +33,12 @@ public class UserServiceImpl implements UserService {
 		}
 		return null;
 	}
-	
+
+	@Override
+	public User getUserByFirstname(String name) {
+		return userDao.findByFirstname(name).orElse(null);
+	}
+
 
 	@Override
 	public List<User>  getAllUsers() {

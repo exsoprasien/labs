@@ -24,4 +24,6 @@ public class AopMonitor {
 		LOGGER.info("After: " + joinPoint);
 	}
 
+
+
 }
