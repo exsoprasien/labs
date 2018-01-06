@@ -13,8 +13,8 @@ public class UserVo {
 		super();
 		this.id = id;
 		this.firstName = firstName;
-		this.name = name;
 		this.birthdate = birthdate;
+		this.name = name;
 	}
 
 	private String id;
