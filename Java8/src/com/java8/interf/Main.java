@@ -52,6 +52,7 @@ public class Main {
 	}
 
 	public int calculate(Interface1 interface1, int a, int b) {
+		System.out.println("test_branch");
 		return interface1.function1(a, b);
 	}
 
