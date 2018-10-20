@@ -30,7 +30,9 @@ public class Main {
 		// Comparator
 		List<Integer> list2 = Arrays.asList(33, 55, 11, 9, 124, 4322);
 		Comparator<Integer> comp = (c1, c2) -> Integer.compare(c1, c2);
-		// System.out.println(list2.stream().max(comp).get());
+		System.out.println(list2.stream().max(comp).get());
+		
+		
 
 		Stream<String> lines = readFile("D:\\WORKSPACES\\LABS\\Java8\\src\\person.txt");
 		List<Person> personList = new ArrayList<Person>();
