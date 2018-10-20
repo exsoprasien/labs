@@ -32,6 +32,7 @@ public class Main {
 		Comparator<Integer> comp = (c1, c2) -> Integer.compare(c1, c2);
 		System.out.println(list2.stream().max(comp).get());
 		
+		//Test Rebase
 		
 
 		Stream<String> lines = readFile("D:\\WORKSPACES\\LABS\\Java8\\src\\person.txt");
