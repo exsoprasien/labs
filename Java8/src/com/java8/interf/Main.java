@@ -32,6 +32,8 @@ public class Main {
 		System.out.println("wassimi");
 		System.out.println("wassimi2");
 		
+		System.out.println("branch3");
+		
 		//filter
 		List<String>strings = Arrays.asList("abc", "", "", "efg", "abcd","", "jkl");
 		//get count of empty string
