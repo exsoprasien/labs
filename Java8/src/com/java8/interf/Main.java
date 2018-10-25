@@ -27,13 +27,6 @@ public class Main {
 		List<Integer> squaresList = numbers.stream().map( i -> i*i).distinct().collect(Collectors.toList());
 		System.out.println(squaresList);
 		
-		System.out.println("assdika24");
-		
-		System.out.println("wassimi");
-		System.out.println("wassimi2");
-		
-		System.out.println("branch3");
-		
 		//filter
 		List<String>strings = Arrays.asList("abc", "", "", "efg", "abcd","", "jkl");
 		//get count of empty string
