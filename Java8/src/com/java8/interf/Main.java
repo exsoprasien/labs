@@ -29,6 +29,9 @@ public class Main {
 		
 		System.out.println("assdika24");
 		
+		System.out.println("wassimi");
+		System.out.println("wassimi2");
+		
 		//filter
 		List<String>strings = Arrays.asList("abc", "", "", "efg", "abcd","", "jkl");
 		//get count of empty string
