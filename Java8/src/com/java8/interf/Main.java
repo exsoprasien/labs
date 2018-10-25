@@ -27,6 +27,7 @@ public class Main {
 		List<Integer> squaresList = numbers.stream().map( i -> i*i).distinct().collect(Collectors.toList());
 		System.out.println(squaresList);
 		
+		System.out.println("assdika2");
 		
 		//filter
 		List<String>strings = Arrays.asList("abc", "", "", "efg", "abcd","", "jkl");
