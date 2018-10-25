@@ -26,7 +26,7 @@ public class Main {
 		Predicate<String> p2 = (s) -> s.endsWith("op");
 		// list.forEach(System.out::println);
 		// list.stream().filter(p.or(p2)).forEach(System.out::println);
-test
+
 		// Comparator
 		List<Integer> list2 = Arrays.asList(33, 55, 11, 9, 124, 4322);
 		Comparator<Integer> comp = (c1, c2) -> Integer.compare(c1, c2);
